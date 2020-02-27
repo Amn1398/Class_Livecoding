@@ -12,3 +12,4 @@ for result in pokemon['results']:
     res_json = requests.get(result['url']).json()
     # print(result['name'], json.dumps(res_json, indent=2))
     print(result['name'], "Weight:", res_json['weight'])
+print("test")
