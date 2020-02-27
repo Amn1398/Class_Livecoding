@@ -17,3 +17,8 @@ for result in pokemon['results']:
     pokemon_weights.append(res_json['id'])
     pokemon_ids.append(res_json['weight'])
     print(result['name'], "Weight:", res_json['weight'])
+
+plt.plot(pokemon_ids, pokemon_weights)
+plt.title("IDs as a Function of Weights")
+plt.xlabel("IDs")
+plt.ylabel("Weights")
